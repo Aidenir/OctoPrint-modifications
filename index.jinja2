@@ -46,7 +46,7 @@
                 <div class="row">
                     <!-- Sidebar -->
                     {% if templates.sidebar.order %}
-                    <div class="accordion {% if templates.tab.order %}span3{% else %}span12{% endif %}">
+                    <div class="accordion {% if templates.tab.order %}span4{% else %}span12{% endif %}">
                         {% for key in templates.sidebar.order %}
                             {% set entry, data = templates.sidebar.entries[key] %}
                             {% if "custom_bindings" not in data or data["custom_bindings"] %}<!-- ko allowBindings: false -->{% endif %}
@@ -81,7 +81,7 @@
 
                     <!-- Tabs -->
                     {% if templates.tab.order %}
-                    <div class="tabbable {% if templates.sidebar.order %}span6{% else %}span12{% endif %}">
+                    <div class="tabbable {% if templates.sidebar.order %}span10{% else %}span12{% endif %}">
                         <ul class="nav nav-tabs" id="tabs">
                             {% for key in templates.tab.order %}
                                 {% set entry, data = templates.tab.entries[key] %}
@@ -118,7 +118,7 @@
 
                     <!-- Sidebar -->
                     {% if templates.sidebar.order %}
-                    <div class="accordion {% if templates.tab.order %}span3{% else %}span12{% endif %} files-sidebar">
+                    <div class="accordion {% if templates.tab.order %}span5{% else %}span12{% endif %} files-sidebar">
                         {% for key in templates.sidebar.order %}
                             {% set entry, data = templates.sidebar.entries[key] %}
                             {% if "custom_bindings" not in data or data["custom_bindings"] %}<!-- ko allowBindings: false -->{% endif %}
