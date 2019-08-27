@@ -1,0 +1,30 @@
+.container{
+    width: 1500px;
+}
+.span4{
+    width: 465px;
+}
+.span8{
+    width: 933px;
+}
+.span3{
+    width: 350px;
+}
+.span6{
+    width:700px;
+}
+#connection_ports,
+#connection_printers,
+#connection_baudrates,
+#connection_save,
+#connection_autoconnect,
+#connection label {
+    display: none;
+}
+.files-sidebar .gcode_files,
+.files-sidebar .gcode_files .scroll-wrapper{
+    height: 580px !important;
+}
+.version-code{
+    float: left;
+}
